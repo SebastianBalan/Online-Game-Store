@@ -26,7 +26,7 @@ namespace Online_Game_store.Models
         }
         public DbSet<Game> Games { get; set; }
 
-        //public DbSet<Publisher> Publisher { get; set; }
+        public DbSet<Publisher> Publishers { get; set; }
 
         //public DbSet<Genre> Genres { get; set; }
 

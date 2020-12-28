@@ -171,6 +171,7 @@
     <Compile Include="Controllers\GamesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\PublishersController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -178,11 +179,20 @@
     <Compile Include="Migrations\202012281430438_addedGames.Designer.cs">
       <DependentUpon>202012281430438_addedGames.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202012281508511_addedPublishers.cs" />
+    <Compile Include="Migrations\202012281508511_addedPublishers.Designer.cs">
+      <DependentUpon>202012281508511_addedPublishers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202012281523247_addedPublishers2.cs" />
+    <Compile Include="Migrations\202012281523247_addedPublishers2.Designer.cs">
+      <DependentUpon>202012281523247_addedPublishers2.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Game.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\Publisher.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -247,6 +257,11 @@
     <Content Include="Views\Games\Details.cshtml" />
     <Content Include="Views\Games\Edit.cshtml" />
     <Content Include="Views\Games\Index.cshtml" />
+    <Content Include="Views\Publishers\Create.cshtml" />
+    <Content Include="Views\Publishers\Delete.cshtml" />
+    <Content Include="Views\Publishers\Details.cshtml" />
+    <Content Include="Views\Publishers\Edit.cshtml" />
+    <Content Include="Views\Publishers\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -267,6 +282,12 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202012281430438_addedGames.resx">
       <DependentUpon>202012281430438_addedGames.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202012281508511_addedPublishers.resx">
+      <DependentUpon>202012281508511_addedPublishers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202012281523247_addedPublishers2.resx">
+      <DependentUpon>202012281523247_addedPublishers2.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

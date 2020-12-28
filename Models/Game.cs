@@ -1,7 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
 using System.Linq;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Web;
 
 
@@ -9,7 +10,6 @@ namespace Online_Game_store.Models
 {
     public class Game
     {
-        [Key]
         public int GameId { get; set; }
 
         [MinLength(5, ErrorMessage = "Title cannot be less than 5"), Required]
@@ -21,12 +21,11 @@ namespace Online_Game_store.Models
         [DataType(DataType.Date)]
         public DateTime DateCreation { get; set; }
 
-        //// one to many
-        //[Column("Publisher_id")]
-        //public int PublisherId { get; set; }
-
-        //public virtual Publisher Publisher { get; set; }
-        //// many to many
+        // one to many
+        public int PublisherId { get; set; }
+        // one-to-many relationship
+        public virtual Publisher Publisher { get; set; }
+        // many to many
         //public virtual ICollection<Genre> Genres { get; set; }
     }
 }
