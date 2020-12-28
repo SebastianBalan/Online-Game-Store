@@ -30,7 +30,7 @@ namespace Online_Game_store.Models
 
         public DbSet<Genre> Genres { get; set; }
 
-        //public DbSet<ContactInfo> ContactInfo { get; set; }
+        public DbSet<Contact> Contacts { get; set; }
         public static ApplicationDbContext Create()
         {
             return new ApplicationDbContext();

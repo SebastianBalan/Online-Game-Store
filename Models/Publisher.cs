@@ -18,7 +18,6 @@ namespace Online_Game_store.Models
         public virtual ICollection<Game> Games { get; set; }
 
         // one-to-one relationship
-        //[Required]
-        //public virtual ContactInfo ContactInfo { get; set; }
+        public virtual Contact Contact { get; set; }
     }
 }
