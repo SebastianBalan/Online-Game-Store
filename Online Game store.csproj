@@ -169,6 +169,7 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\GamesController.cs" />
+    <Compile Include="Controllers\GenresController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\PublishersController.cs" />
@@ -187,9 +188,14 @@
     <Compile Include="Migrations\202012281523247_addedPublishers2.Designer.cs">
       <DependentUpon>202012281523247_addedPublishers2.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202012281604327_addedGEnres.cs" />
+    <Compile Include="Migrations\202012281604327_addedGEnres.Designer.cs">
+      <DependentUpon>202012281604327_addedGEnres.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Game.cs" />
+    <Compile Include="Models\Genre.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\Publisher.cs" />
@@ -262,6 +268,11 @@
     <Content Include="Views\Publishers\Details.cshtml" />
     <Content Include="Views\Publishers\Edit.cshtml" />
     <Content Include="Views\Publishers\Index.cshtml" />
+    <Content Include="Views\Genres\Create.cshtml" />
+    <Content Include="Views\Genres\Delete.cshtml" />
+    <Content Include="Views\Genres\Details.cshtml" />
+    <Content Include="Views\Genres\Edit.cshtml" />
+    <Content Include="Views\Genres\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -288,6 +299,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202012281523247_addedPublishers2.resx">
       <DependentUpon>202012281523247_addedPublishers2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202012281604327_addedGEnres.resx">
+      <DependentUpon>202012281604327_addedGEnres.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

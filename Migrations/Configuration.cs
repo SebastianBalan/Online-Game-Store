@@ -22,6 +22,15 @@ namespace Online_Game_store.Migrations
             //  You can use the DbSet<T>.AddOrUpdate() helper extension method 
             //  to avoid creating duplicate seed data.
 
+            var genres = new List<Genre>
+            {
+                new Genre { Name = "MMORPG" },
+                new Genre { Name = "AAA"},
+            };
+            genres.ForEach(s => context.Genres.AddOrUpdate(p => p.GenreId, s));
+            context.SaveChanges();
+
+
             var publishers = new List<Publisher>
             {
                 new Publisher { Name = "Sebi" },

@@ -26,6 +26,6 @@ namespace Online_Game_store.Models
         // one-to-many relationship
         public virtual Publisher Publisher { get; set; }
         // many to many
-        //public virtual ICollection<Genre> Genres { get; set; }
+        public virtual ICollection<Genre> Genres { get; set; }
     }
 }
