@@ -24,7 +24,13 @@ namespace Online_Game_store.Models
             : base("DefaultConnection", throwIfV1Schema: false)
         {
         }
+        public DbSet<Game> Games { get; set; }
 
+        //public DbSet<Publisher> Publisher { get; set; }
+
+        //public DbSet<Genre> Genres { get; set; }
+
+        //public DbSet<ContactInfo> ContactInfo { get; set; }
         public static ApplicationDbContext Create()
         {
             return new ApplicationDbContext();
