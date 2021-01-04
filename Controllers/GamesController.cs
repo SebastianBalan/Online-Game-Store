@@ -14,6 +14,7 @@ namespace Online_Game_store.Controllers
     {
         private ApplicationDbContext db = new ApplicationDbContext();
 
+        [AllowAnonymous]
         // GET: Games
         public ActionResult Index()
         {

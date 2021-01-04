@@ -10,6 +10,7 @@ using Online_Game_store.Models;
 
 namespace Online_Game_store.Controllers
 {
+    [Authorize]
     public class ContactsController : Controller
     {
         private ApplicationDbContext db = new ApplicationDbContext();
